@@ -29,6 +29,7 @@ jobs:
           if [ "$n" -lt 1 ] || [ "$n" -gt 2000 ]; then
             echo "Unexpected entry count: $n"; exit 1
           fi
+          mkdir -p feeds
           mv /tmp/feed.txt feeds/chatgpt-voice.txt
 
       - name: Weekly keepalive
